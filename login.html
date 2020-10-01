@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="" width="125px">                
+            </div>
+            <nav>
+                <ul id="menuitem">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="" width="30px">
+            <img src="images/menu.png" alt="" class="menu-icon" id="menutoggle">
+        </div>
+    </div>
+    <!-- account -->
+    <div class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span id="login">Login</span>
+                            <span id="registry">Registry</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn" id="btnLogin">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                        <form id="registryForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn" id="btnRegistry">Registry</button>
+                            <a href="">Forgot password</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Dowload App</h3>
+                    <p>Dowload App For Android and ios mobile</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To sucstainably Make the Pleasure and
+                        to the many
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Policy</li>
+                        <li>John Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow me</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Le Chuan</p>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $("#login").click(function(){
+        $("#registryForm").css('transform','translateX(300px)');
+        $("#loginForm").css('transform','translateX(300px)');
+        $("#indicator").css('transform','translateX(0px)');
+    });
+    $("#registry").click(function(){
+        $("#registryForm").css('transform','translateX(0px)');
+        $("#loginForm").css('transform','translateX(0px)');
+        $("#indicator").css('transform','translateX(100px)');
+    });
+</script>
+
+</html>
